@@ -11,6 +11,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Chatbot from "@/components/Chatbot";
 
+
 const ReportScam = () => {
   const [formData, setFormData] = useState({
     internshipTitle: "",

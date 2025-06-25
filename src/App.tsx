@@ -9,6 +9,9 @@ import DetectInternship from "./pages/DetectInternship";
 import ScamList from "./pages/ScamList";
 import Learn from "./pages/Learn";
 import ReportScam from "./pages/ReportScam";
+import ScamStories from "./pages/ScamSories";
+
+
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,7 +27,10 @@ const App = () => (
           <Route path="/detect" element={<DetectInternship />} />
           <Route path="/scam-list" element={<ScamList />} />
           <Route path="/learn" element={<Learn />} />
+          
           <Route path="/report" element={<ReportScam />} />
+          <Route path="/ScamStories" element={<ScamStories />} />
+          
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
